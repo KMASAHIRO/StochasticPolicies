@@ -1,2 +1,2 @@
-# TrafficFlowControl_with_StochasticPolicies
+# StochasticPolicyGradientMethods
 Rethinking the Stochastic Policy Gradient Methods Using a Traffic Simulator.

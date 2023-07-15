@@ -3,11 +3,6 @@ import configparser
 import subprocess
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-m", "--map", type=str, required=True)
-    args = parser.parse_args()
-    map_name = args.map
-
     config = configparser.ConfigParser()
     config.read("config.ini", encoding='utf-8')
 

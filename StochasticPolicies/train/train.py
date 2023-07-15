@@ -13,7 +13,7 @@ from StochasticPolicies.config.agent_config import agent_configs
 from StochasticPolicies.config.map_config import map_configs
 from StochasticPolicies.environments_framework import states, rewards
 
-# PPOの学習
+# train agents using the PPO algorithm
 def train_PPO(
     run_name, map_name, map_dir, 
     episodes=1400, temperature=1.0, noise=0.0, layer_type=None, 

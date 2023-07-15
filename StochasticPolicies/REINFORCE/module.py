@@ -3,7 +3,7 @@ import numpy as np
 from StochasticPolicies.layers.NoisyNet import NoisyLinear
 from StochasticPolicies.layers.BBB import BayesianLinear
 
-# 方策関数
+# Policy Function
 class PolicyFunction(torch.nn.Module):
     def __init__(
         self, num_states, num_actions, temperature, noise, layer_type, 
@@ -57,7 +57,7 @@ class PolicyFunction(torch.nn.Module):
     def remove_noise(self):
         self.fc_last_layer.remove_noise()
 
-# 損失関数(期待収益のマイナス符号)
+# Loss Function
 class PolicyGradientLossWithREINFORCE(torch.nn.Module):
     def __init(self):
         super().__init__()
@@ -67,14 +67,13 @@ class PolicyGradientLossWithREINFORCE(torch.nn.Module):
         loss = 0
         for i in range(len(actions_prob_history)):
             chosen_action_prob = actions_prob_history[i]
-            # 最大化する関数のマイナス
+            # Negative of the function to maximize
             loss = loss - torch.log(chosen_action_prob) * (rewards_history[i] - ave_rewards)
             
         loss = loss / len(actions_prob_history)
 
         return loss
 
-# エージェント(方策関数を学習し、行動を決定する)
 class Agent():
     def __init__(
         self, num_states, num_actions, temperature, noise, layer_type, 

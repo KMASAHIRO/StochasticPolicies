@@ -22,7 +22,7 @@ def lecun_init(layer, gain=1):
         nn.init.zeros_(layer.bias_hh_l0)
     return layer
 
-# 先行研究での方策関数
+# Based on the Policy Function in RESCO
 class DefaultModel(torch.nn.Module):
     def __init__(
         self, obs_space, act_space, num_batches, temperature=1.0, noise=0.0, 

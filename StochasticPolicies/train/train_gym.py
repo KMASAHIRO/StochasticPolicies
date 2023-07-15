@@ -5,7 +5,7 @@ import gym
 
 from StochasticPolicies.REINFORCE.module import Agent
 
-# 学習させる関数
+# train an agent using the REINFORCE algorithm
 def train_agent_gym(
     env_name, model_save_path=None, episode_per_learn=10, episodes=1400,  max_steps=500, 
     lr=0.01, decay_rate=0.01, temperature=1.0, noise=0.0, layer_type=None, 

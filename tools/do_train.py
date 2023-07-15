@@ -28,15 +28,15 @@ if __name__=="__main__":
 
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
-    # ファイル出力ハンドラーの設定
+    # File output handler settings
     handler = logging.FileHandler(args.error_output_path)
     handler.setLevel(logging.DEBUG)
-    # 出力フォーマットの設定
+    # Setting output format
     formatter = logging.Formatter('%(levelname)s  %(asctime)s  [%(name)s] %(message)s')
     handler.setFormatter(formatter)
-    # ハンドラーの追加
+    # Adding the handler
     logger.addHandler(handler)
-    # 重複出力をなくす
+    # Eliminate duplicate output
     logger.propagate = False
 
     if args.reward_csv == "":

@@ -1,7 +1,7 @@
 import traci
 import copy
 import re
-from TrafficFlowControl_with_StochasticPolicies.config.signal_config import signal_configs
+from StochasticPolicies.config.signal_config import signal_configs
 
 
 def create_yellows(phases, yellow_length):

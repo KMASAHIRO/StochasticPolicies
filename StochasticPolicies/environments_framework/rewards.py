@@ -1,6 +1,6 @@
 import numpy as np
 
-from TrafficFlowControl_with_StochasticPolicies.config.mdp_config import mdp_configs
+from StochasticPolicies.config.mdp_config import mdp_configs
 
 
 def wait(signals):

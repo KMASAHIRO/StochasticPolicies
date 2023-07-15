@@ -4,14 +4,12 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from pfrl.nn import Branched
 import pfrl.initializers
 from pfrl.agents import PPO
-from pfrl.policies import SoftmaxCategoricalHead
 
-from TrafficFlowControl_with_StochasticPolicies.PPO.agent import IndependentAgent, Agent
-from TrafficFlowControl_with_StochasticPolicies.layers.NoisyNet import NoisyLinear
-from TrafficFlowControl_with_StochasticPolicies.layers.BBB import BayesianLinear
+from StochasticPolicies.PPO.agent import IndependentAgent, Agent
+from StochasticPolicies.layers.NoisyNet import NoisyLinear
+from StochasticPolicies.layers.BBB import BayesianLinear
 
 def lecun_init(layer, gain=1):
     if isinstance(layer, (nn.Conv2d, nn.Linear)):

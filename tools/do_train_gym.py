@@ -1,4 +1,4 @@
-from TrafficFlowControl_with_StochasticPolicies.train.train_gym import train_agent_gym
+from StochasticPolicies.train.train_gym import train_agent_gym
 import argparse
 import logging
 

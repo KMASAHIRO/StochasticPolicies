@@ -1,7 +1,7 @@
 import torch
 import numpy as np
-from TrafficFlowControl_with_StochasticPolicies.layers.NoisyNet import NoisyLinear
-from TrafficFlowControl_with_StochasticPolicies.layers.BBB import BayesianLinear
+from StochasticPolicies.layers.NoisyNet import NoisyLinear
+from StochasticPolicies.layers.BBB import BayesianLinear
 
 # 方策関数
 class PolicyFunction(torch.nn.Module):

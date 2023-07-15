@@ -6,13 +6,12 @@ import pandas as pd
 import traci
 import random
 
-from TrafficFlowControl_with_StochasticPolicies.environments_framework.multi_signal import MultiSignal
-from TrafficFlowControl_with_StochasticPolicies.REINFORCE.module import Agent
-from TrafficFlowControl_with_StochasticPolicies.PPO.PPO import IPPO
+from StochasticPolicies.environments_framework.multi_signal import MultiSignal
+from StochasticPolicies.PPO.PPO import IPPO
 from .analysis import read_csv, read_xml
-from TrafficFlowControl_with_StochasticPolicies.config.agent_config import agent_configs
-from TrafficFlowControl_with_StochasticPolicies.config.map_config import map_configs
-from TrafficFlowControl_with_StochasticPolicies.environments_framework import states, rewards
+from StochasticPolicies.config.agent_config import agent_configs
+from StochasticPolicies.config.map_config import map_configs
+from StochasticPolicies.environments_framework import states, rewards
 
 # PPOの学習
 def train_PPO(

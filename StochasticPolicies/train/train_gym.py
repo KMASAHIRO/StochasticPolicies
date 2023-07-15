@@ -3,9 +3,7 @@ import numpy as np
 import pandas as pd
 import gym
 
-from TrafficFlowControl_with_StochasticPolicies.REINFORCE.module import Agent
-from TrafficFlowControl_with_StochasticPolicies.PPO.PPO import IPPO
-from TrafficFlowControl_with_StochasticPolicies.config.agent_config import agent_configs
+from StochasticPolicies.REINFORCE.module import Agent
 
 # 学習させる関数
 def train_agent_gym(

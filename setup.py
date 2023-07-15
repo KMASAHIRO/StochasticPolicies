@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='StochasticPolicies',
-    version='0.0.3',
+    version='0.0.4',
     packages=find_packages(),
     install_requires=open('requirements.txt').read().splitlines(),
     url='https://github.com/KMASAHIRO/StochasticPolicies',

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Sun May 23 17:27:59 2021 by Eclipse SUMO duarouter Version 1.9.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="arterial4x4.net.xml"/>
+        <route-files value="./trips/arterial4x4_1.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="./routes/arterial4x4_1.rou.xml"/>
+        <alternatives-output value="./routes/arterial4x4_1.rou.alt.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="type1" length="5.00" accel="5" decel="10"/>
+</routes>

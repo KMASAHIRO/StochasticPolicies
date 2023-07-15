@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Sun May 23 17:01:28 2021 by Eclipse SUMO duarouter Version 1.9.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="grid4x4.net.xml"/>
+        <route-files value="./trips/grid4x4_1.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="./routes/grid4x4_1.rou.xml"/>
+        <alternatives-output value="./routes/grid4x4_1.rou.alt.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+</routes>

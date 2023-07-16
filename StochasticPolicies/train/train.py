@@ -97,10 +97,10 @@ def train_PPO(
     env.close()
 
     if reward_csv is not None:
-        episodes = list()
+        episode_num = list()
         mean_reward = list()
         for i in range(episodes):
-            episodes.append(i+1)
+            episode_num.append(i+1)
             load_path = csv_dir + "metrics_" + str(i + 1) + ".csv"
             dataframe = pd.read_csv(load_path, header=None).dropna(axis=0)
             reward_sum = list()
@@ -110,7 +110,7 @@ def train_PPO(
 
             mean_reward.append(np.mean(reward_sum))
 
-        analysis_data = {"episode": episodes, "mean_reward": mean_reward}
+        analysis_data = {"episode": episode_num, "mean_reward": mean_reward}
         analysis_dataframe = pd.DataFrame(analysis_data)
         analysis_dataframe.to_csv(reward_csv, index=False)
 

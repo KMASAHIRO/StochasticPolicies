@@ -1,8 +1,8 @@
 # StochasticPolicies  
 Source code for "Rethinking the Stochastic Policy Gradient Methods Using a Traffic Simulator".  
-This source code is based on [RESCO](https://github.com/Pi-Star-Lab/RESCO).  
+This source code is based on [RESCO (Reinforcement Learning Benchmarks for Traffic Signal Control)](https://github.com/Pi-Star-Lab/RESCO).  
   
-PPO agents with stochastic policies can be trained for traffic signal control tasks. [Simulation for Urban Mobility (SUMO)](https://eclipse.dev/sumo/) is used as a traffic simulator.  
+PPO agents with stochastic policies can be trained for traffic signal control tasks. [SUMO (Simulation for Urban Mobility)](https://eclipse.dev/sumo/) is used as a traffic simulator.  
 REINFORCE agents with stochastic policies can be trained for some [OpenAI Gym](https://www.gymlibrary.dev/) tasks.
 
 ## Installation  

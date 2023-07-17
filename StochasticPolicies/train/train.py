@@ -46,10 +46,10 @@ def train_PPO(
     lights = map_config["lights"]
     warmup = map_config["warmup"]
 
-    csv_dir = log_dir + run_name + '-' + map_name + '-' + str(len(lights)) + '-' + state_f.__name__ + '-' + reward_f.__name__ + "/"
+    csv_dir = log_dir + run_name + '-tr1-' + map_name + '-' + str(len(lights)) + '-' + state_f.__name__ + '-' + reward_f.__name__ + "/"
 
     env = MultiSignal(
-        run_name=run_name, map_name=map_name,
+        run_name=run_name+'-tr1', map_name=map_name,
         net=net_file, state_fn=state_f, reward_fn=reward_f,
         route=route_file, step_length=step_length, yellow_length=yellow_length, 
         step_ratio=step_ratio, end_time=end_time, max_distance=max_distance, 

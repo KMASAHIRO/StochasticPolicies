@@ -108,7 +108,7 @@ def _elementwise_clip(x, x_min, x_max):
     """
     return torch.min(torch.max(x, x_min), x_max)
 
-class VQ_PPO(PPO):
+class STOCHASTIC_PPO(PPO):
     def _lossfun(
         self, entropy, vs_pred, log_probs, vs_pred_old, log_probs_old, advs, vs_teacher
         ):
@@ -208,7 +208,7 @@ class PFRLPPOAgent(Agent):
         if model_param.get("device"):
             self.device = torch.device(model_param["device"])
 
-        self.agent = VQ_PPO(
+        self.agent = STOCHASTIC_PPO(
             self.model, self.optimizer, gpu=self.device.index,
             phi=lambda x: np.asarray(x, dtype=np.float32),
             clip_eps=0.1,

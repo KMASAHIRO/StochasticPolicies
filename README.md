@@ -1,5 +1,5 @@
 # StochasticPolicies  
-Source code for "Rethinking the Stochastic Policy Gradient Methods Using a Traffic Simulator".  
+Source code for "Rethinking Stochastic Policy Gradient Methods Using Traffic Simulator Benchmark".  
 This source code is based on [RESCO (Reinforcement Learning Benchmarks for Traffic Signal Control)](https://github.com/Pi-Star-Lab/RESCO).  
   
 PPO agents with stochastic policies can be trained for traffic signal control tasks. [SUMO (Simulation for Urban Mobility)](https://eclipse.dev/sumo/) is used as a traffic simulator.  
@@ -58,9 +58,8 @@ Delay is the primary metric for training, and the lower the better.
 SUMO scenarios are provided in the environment and route_change directories. All scenarios are distributed under the original license. Information on the Cologne scenario can be found at (https://sumo.dlr.de/docs/Data/Scenarios/TAPASCologne.html). Information on the Ingolstadt scenario can be found at (https://github.com/silaslobo/InTAS). Information on the other scenarios can be found at (https://sumo.dlr.de/docs/Data/Scenarios.html).  
 
 ## Results
-The graph below shows the variation of the minimum Delay value with temperature parameters.  
+The graph below shows change in the minimum value of delay due to the temperature parameter.  
 ![log_2x4](https://github.com/KMASAHIRO/StochasticPolicies/assets/74399610/f62636ae-c485-41d2-8736-f194950ce463)
 
-The graph below shows the effect of the temperature parameter as a result of changes in traffic volume (Legends indicates traffic volume (vehicles/hour). Orange represents the reference traffic volume, the same value as in the graph above).  
-
+The graph below shows changes in the effect of the temperature parameter due to changes in traffic volume (the legend represents traffic volume (vehicles/hour). Orange represents the reference traffic volume, which represents the same value as the graph above).  
 ![traffic_flow](https://github.com/KMASAHIRO/StochasticPolicies/assets/74399610/25a588be-f5e5-4d9e-ba4d-e1d1806808ba)

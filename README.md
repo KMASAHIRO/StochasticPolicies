@@ -63,3 +63,20 @@ The graph below shows change in the minimum value of delay due to the temperatur
 
 The graph below shows changes in the effect of the temperature parameter due to changes in traffic volume (the legend represents traffic volume (vehicles/hour). Orange represents the reference traffic volume, which represents the same value as the graph above.).  
 ![traffic_flow](https://github.com/KMASAHIRO/StochasticPolicies/assets/74399610/25a588be-f5e5-4d9e-ba4d-e1d1806808ba)
+
+## Citation
+```
+@inproceedings{kato2024reconsidering,
+title = {Reconsidering Stochastic Policy Gradient Methods for Traffic Signal Control},
+author = {Kato, Masahiro and Kojima, Ryosuke},
+booktitle = {Advances and Trends in Artificial Intelligence. Theory and Applications: 37th International Conference on Industrial, Engineering and Other Applications of Applied Intelligent Systems, IEA/AIE 2024},
+pages = {442–453},
+year = {2024},
+url = {https://doi.org/10.1007/978-981-97-4677-4_36},
+doi = {10.1007/978-981-97-4677-4_36},
+isbn = {978-981-97-4676-7},
+publisher = {Springer-Verlag},
+month={Jul. 11},
+place = {Hradec Kralove, Czech Republic}
+}
+```
